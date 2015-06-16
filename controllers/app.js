@@ -15,7 +15,6 @@ app.factory ('posts', function (){
 });
 
 app.controller ('MainCtrl', ['$scope', 'posts', function ($scope, posts){
-  console.log (posts.posts)
   $scope.posts = posts.posts;
 
   $scope.addPost = function () {
